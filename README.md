@@ -3,7 +3,5 @@
 
 #### Preprint of the research paper: ![TDS_paper_V1]([https://](https://www.researchsquare.com/article/rs-3041837/v1))
 
-WRITTEN BY MOHAMMAD ASADOLAHI
-      mohammad.e.asadolahi@gmail.com  
   **to do:**  
 add plots and tables of the paper
