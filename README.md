@@ -1,3 +1,9 @@
 # TDS
-Stochastic Off-Policy Actor-Critic Algorithm  
-algorithm and codes will be uploaded in this repo when the paper is preprint in Springer [Autonomous Agents and Multi-Agent Systems](https://www.springer.com/journal/10458)
+### official implementation of Twin delayed actor critic algorithm (a Stochastic Off-Policy Actor-Critic Algorithm for contiuous RL problems)
+
+#### Preprint of the research paper: ![TDS_paper_V1]([https://](https://www.researchsquare.com/article/rs-3041837/v1))
+
+WRITTEN BY MOHAMMAD ASADOLAHI
+      mohammad.e.asadolahi@gmail.com  
+  **to do:**  
+add plots and tables of the paper
