@@ -11,6 +11,8 @@
 
 **Outperforms TD3, SAC, and DDPG across every MuJoCo and Box2D environment tested.**
 
+Created by **[Mohammad Asadolahi](https://github.com/MohammadAsadolahi)** — Senior Agentic AI Engineer | Agentic AI Architectures In The Wild
+
 <br>
 
 <img src="https://github.com/MohammadAsadolahi/TDS-Twin-Delayed-Stochastic-Actor-Critic/blob/main/TDS.png" width="720">
@@ -88,10 +90,8 @@ The actor's $\sigma$ head learns exploration magnitude directly from policy grad
 ### 1. Install Dependencies
 
 ```bash
-pip install -r Requirements.txt
+pip install torch gymnasium[mujoco] numpy pandas matplotlib
 ```
-
-Core dependencies: `torch`, `gymnasium[mujoco]`, `numpy`, `pandas`, `matplotlib`
 
 ### 2. Train on Ant-v4
 
@@ -126,17 +126,20 @@ Evaluation runs every **5,000 steps** over 10 episodes. Training logs and result
 ## Repository Structure
 
 ```
-├── Actor.py              # Stochastic actor network (μ + σ heads)
-├── Critic.py             # Twin Q-network architecture
-├── Agent.py              # TDS agent — action selection, learning, target updates
-├── Replay_Buffer         # Standard experience replay
-├── Main.py               # Training loop — Ant-v4 with evaluation
-├── Requirements.py       # Dependencies
+├── Actor.py                              # Stochastic actor network (μ + σ heads)
+├── Critic.py                             # Twin Q-network architecture
+├── Agent.py                              # TDS agent — action selection, learning, target updates
+├── Replay_Buffer                         # Standard experience replay
+├── Main.py                               # Training loop — Ant-v4 with evaluation
+├── Requirements.py                       # Dependency list
+├── TDS_solving_gymnasium_Ant_v4.ipynb    # Interactive notebook — full TDS training run
+├── TDS.png                               # Architecture diagram
+├── TDS_policy_architecture.png           # Policy architecture diagram
 ├── Benchmarks/
-│   ├── DDPG_ANT_V3.ipynb # DDPG baseline comparison
-│   ├── SAC_ANT_V3.ipynb  # SAC baseline comparison
-│   └── TD3_ANT_V3.ipynb  # TD3 baseline comparison
-└── Plots/                # All learning curves + benchmark tables
+│   ├── DDPG_ANT_V3.ipynb                # DDPG baseline comparison
+│   ├── SAC_ANT_V3.ipynb                 # SAC baseline comparison
+│   └── TD3_ANT_V3.ipynb                 # TD3 baseline comparison
+└── Plots/                                # All learning curves + benchmark tables
 ```
 
 ---
@@ -173,6 +176,6 @@ Evaluation runs every **5,000 steps** over 10 episodes. Training logs and result
 
 **Questions? Feature requests?** [Open an Issue](../../issues) — contributions and discussions are welcome.
 
-<sub>This is a research project. The authors assume no liability for deployment in production environments.</sub>
+<sub>This is a research project. The author assumes no liability for deployment in production environments.</sub>
 
 </div>
